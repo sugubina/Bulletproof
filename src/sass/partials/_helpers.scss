@@ -43,30 +43,6 @@
 .hidden {
     display: none;
 }
-.error-msg {
-    position: absolute;
-    z-index: 20;
-    top: 200px;
-    left: 50%;
-
-    margin-left: -178px;
-    padding: 20px;
-
-    text-align: center;
-
-    color: #fff;
-    background: red;
-    h4 {
-        margin-bottom: 10px;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-
-        list-style: none;
-    }
-}
-
 
 /* Popups
    ========================================================================== */

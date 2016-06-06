@@ -2,5 +2,16 @@
    Components
    ========================================================================== */
 
+img {
+	max-width: 100%;
+}
+
 /* Buttons
    ========================================================================== */
+.button {
+	display: inline-block;
+	padding: 1.214em 3.714em;
+	background: $color_shamrock;
+	color: $color_white;
+	border-radius: 33px;
+}
