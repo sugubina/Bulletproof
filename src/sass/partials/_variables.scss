@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Variables: colors, sizes, fonts
+   ========================================================================== */
+
+/* Colors
+========================================================================== */
+$color_default: #606f7e;
+$color-mako: #44484F;
+$color-pale-sky: #696F7C;
+$color-charade: #2B303B;
+$color_white: #fff;
+$color_black: #000;
+$color_grey: #b5b8b9;
+$color_input_border: #ccc;
+$color_dark_grey: #121212;
+$color_red_alert: #a30000;
+$color_orange: #ffaf27;
+
+/* Sizes
+========================================================================== */
+$size_inner: 960px;
+
+/* Fonts
+========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,latin-ext);
+$font_normal: 'Roboto', Arial, sans-serif;

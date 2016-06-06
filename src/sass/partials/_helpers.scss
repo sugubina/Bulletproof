@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+
+/* Clearfixes
+   ========================================================================== */
+.clear {
+    line-height: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+
+    height: 0;
+    margin: 0!important;
+
+    content: '.';
+    &:after {
+        display: block;
+        clear: both;
+
+        margin: 0!important;
+
+        content: '.';
+    }
+}
+.clearfix {
+    &:before,
+    &:after {
+        display: block;
+        visibility: hidden;
+
+        height: 0;
+
+        content: '\0020';
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.hidden {
+    display: none;
+}
+.error-msg {
+    position: absolute;
+    z-index: 20;
+    top: 200px;
+    left: 50%;
+
+    margin-left: -178px;
+    padding: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    background: red;
+    h4 {
+        margin-bottom: 10px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+}
+
+
+/* Popups
+   ========================================================================== */
+
+
+/* Buttons
+   ========================================================================== */

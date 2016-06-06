@@ -1,0 +1,9 @@
+.sass-cache/
+node_modules/
+dist/
+validation-report.json
+validation-status.json
+.DS_Store
+dist_lp/
+dist_thx/
+*.zip
