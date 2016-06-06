@@ -21,35 +21,48 @@ a {
 
     &:hover {
         text-decoration: none;
-        text-decoration: none;
+        color: $color_white;
     }
+    &:active {
+      outline: none;
+    }
+
 }
 
 h1 {
   font-size: 70px;
   line-height: 1.286;
   font-weight: 300;
+  margin: 0;
 }
 
 h2 {
   font-size: 40px;
   line-height: 2.25;
   font-weight: 300;
+  margin: 0;
 }
 
 h3 {
   font-size: 30px;
   line-height: 1.833;
   font-weight: 300;
+  margin: 0;
 }
 
 h4 {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0;
 }
 h5 {
   font-size: 13px;
   line-height: 1.846;
   font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
