@@ -12,6 +12,7 @@
     width: 100%;
   }
   @media (max-width: 767px) {
+    width: 100%;
   }
     
 }
@@ -42,7 +43,7 @@
   &__logo {
     margin-left: 65px;
   }
-  &__right {
+  &__menu {
     margin-right: 40px;
   }
 }
@@ -53,6 +54,10 @@
   display: flex;
   background: $color_deluge;
   color: $color_white;
+  &__content {
+    margin-right: 20px;
+    flex: 1 1 calc(40% - 20px);
+  }
   &__header {
     margin: 100px 0 0 0;
   }
@@ -63,17 +68,12 @@
   }
   &__image {
     position: absolute;
-    top: -70px;
+    top: -79px;
     right: 40px;
   }
-}
-.col-left {
-  margin-right: 20px;
-  flex: 1 1 calc(40% - 20px);
-}
-
-.col-right {
-  flex: 1 1 60%;
+  &__media {
+    flex: 1 1 60%;
+  }
 }
 
 .features {
@@ -99,13 +99,84 @@
 }
 
 .design {
+  position: relative;
   background: $color_charade;
   color: white;
+  &:before {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    margin-left: -60px;
+    display: block;
+    height: 63px;
+    width: 120px;
+    content: " ";
+    background-image: url(../img/element.png);
+  }
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  &__header {
+    margin-top: 100px;
+  }
+  &__desc {
+    margin-bottom: 90px;
+    line-height: 1.875;
+    color: $color_grey;
+  }
+}
+
+.steps {
+  padding-bottom: 13%;
+  background: $color_charade;
+  color: $color_white;
+  &__box {
+    flex: 1;
+    margin-top: 160px;
+    margin-right: 32px;
+  }
+  &__span {
+    color: $color_fiord;
+  }
+  &__desc {
+    margin-top: 30px;
+    line-height: 1.857;
+    color: $color_grey;
   }
 }
 /* Footer
    ========================================================================== */
+.footer {
+  background: $color_shark;
+  color: $color_squeeze;
+  padding: 8.5% 0 12% 0;
+  &__desc {
+    font-size: 12px;
+    line-height: 1.846;
+    font-weight: 600;
+  }
+  &__content {
+    flex: 1;
+    margin-right: 20px;
+  }
+  &__links {
+    display: flex;
+  }
+  &__list {
+    flex: 1;
+    margin-top: 70px;
+    a {
+      font-size: 13px;
+      line-height: 1.846;
+      font-weight: 600;
+      color: $color_squeeze;
+    }
+  }
+  &__media {
+    flex: 1;
+    margin-left: 110px;
+  }
+}

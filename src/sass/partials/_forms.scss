@@ -1,3 +1,26 @@
 /* ==========================================================================
    Forms
    ========================================================================== */
+.footer-form {
+	display: flex;
+	width: 470px;
+	height: 60px;
+	margin: 0 0 15px 0;
+	&__input {
+		flex-basis: 85%;
+		height: 60px;
+		margin: 0;
+		border: none;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	&__btn {
+		flex-basis: 15%;
+		height: 60px;
+		margin: 0;
+		border: none;
+		background: $color_deluge;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}
