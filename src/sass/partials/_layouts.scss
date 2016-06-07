@@ -6,13 +6,14 @@
 .inner {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   width: $size_inner;
   margin: 0 auto;
   @media (max-width: 1100px) {
-    width: 100%;
+    max-width: $size_inner_tb;
   }
   @media (max-width: 767px) {
-    width: 100%;
+    max-width: $size_inner_sm;
   }
     
 }
@@ -28,6 +29,10 @@
   height: 100%;
   background: url(/img/visual-bg.jpg) no-repeat;
   color: $color_white;
+  @media(max-width: 1100px) {
+    background-size: cover;
+    height: 100%;
+  }
   &__content {
     margin-right: 100px;
     margin-bottom: 240px;
@@ -70,6 +75,9 @@
     position: absolute;
     top: -79px;
     right: 40px;
+    @media(max-width: 1100px) {
+    display: none;
+  }
   }
   &__media {
     flex: 1 1 60%;
@@ -80,7 +88,11 @@
   padding: 6.77% 0 9.49% 0;
   background: $color_squeeze;
   &__box {
+    flex: 1 1 calc(33.333% - 44px);
     margin-right: 44px;
+    @media(max-width: 1100px) {
+    flex-basis: 100%;
+  }
   }
   &__header {
     color: $color_charade;
@@ -145,6 +157,81 @@
     margin-top: 30px;
     line-height: 1.857;
     color: $color_grey;
+  }
+}
+
+.conectivity {
+  background: url(../img/watch.jpg) top right no-repeat;
+  background-size: 52% 100%;
+  background-color: $color_mystic;
+  @media(max-width: 1100px) {
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: " ";
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 3;
+    width: 48%;
+    padding-right: 11.8%;
+  }
+  &__header {
+    margin-top: 100px;
+  }
+  &__subheader {
+    font-size: 20px;
+    font-weight: 300;
+    color: $color_pale-sky;
+    margin-bottom: 40px;
+  }
+  &__desc {
+    line-height: 28px;
+    margin-bottom: 140px;
+    color: $color_mako;
+  }
+}
+
+.pen {
+  background: url('../img/pen.jpg') left top no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+  &__content {
+     width: 48vw;
+     padding: 5% 6.5%;
+     background: $color_deluge; 
+     color: $color_white;
+  }
+  &__quote {
+    font-size: 32px;
+    font-style: italic;
+    line-height: 44px;
+  }
+  &__name {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 50px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      height: 60px;
+      width: 60px;
+      content: " ";
+      background-image: url(../img/author.png);
+      background-size: contain;
+    }
   }
 }
 /* Footer
